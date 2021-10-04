@@ -11,6 +11,24 @@ const errorCode = 0;
 // 3: "Afvalbak vol"
 // 4: "Geen druk"
 
+switch (errorCode) {
+    case 0:
+        console.log("Geen watertoevoer");
+        break;
+    case 1:
+        console.log("Temperatuur te laag");
+        break;
+    case 2:
+        console.log("Koffiebonen op");
+        break;
+    case 3:
+        console.log("Afvalbak vol");
+        break;
+    case 4:
+        console.log("Geen druk");
+        break;
+}
+
 // Verwachtte uitkomsten:
 // const errorCode = 0 geeft "Geen watertoevoer" in de terminal
 // const errorCode = 4 geeft "Geen druk" in de terminal
@@ -30,6 +48,37 @@ const monitorColor = "red";
 // "orange": "Kritieke hartslag, actie vereist!"
 // "red": "Kritieke hartslag, actie vereist!"
 // Bij alle andere kleuren is de status van de hartslag onbekend.
+
+switch (monitorColor) {
+    case "green":
+        console.log("Hartslag stabiel");
+        break
+    case "yellow":
+        console.log("Hartslag verhoogd");
+        break
+    case "orange":
+        console.log("Kritieke hartslag, actie vereist!");
+        break;
+    case "red":
+        console.log("Kritieke hartslag, actie vereist!");
+        break;
+    default:
+        console.log("hartslag onbekend")
+
+}
+
+if (monitorColor === "green") {
+    console.log("Hartslag stabiel");
+} else if (monitorColor === "yellow") {
+    console.log("Hartslag verhoogd");
+} else if (monitorColor === "orange") {
+    console.log("Kritieke hartslag, actie vereist!");
+} else if (monitorColor === "red") {
+    console.log("Kritieke hartslag, actie vereist!");
+} else {
+    console.log("hartslag onbekend");
+}
+
 
 // Verwachtte uitkomsten:
 // const monitorColor = "red" geeft "Kritieke hartslag, actie vereist!" in de terminal
